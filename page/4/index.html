@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="hexo-theme" content="https://github.com/xaoxuu/hexo-theme-stellar/tree/1.29.1" theme-name="Stellar" theme-version="1.29.1">
-  <meta name="robots" content="noindex,follow">
+  
   <meta name="generator" content="Hexo 7.3.0">
   <meta http-equiv='x-dns-prefetch-control' content='on' />
   
@@ -17,12 +17,12 @@
   <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#000">
   <meta name="theme-color" content="#f9fafb">
   
-  <title>标签：封装性 - 半岛的小屋</title>
+  <title>半岛的小屋</title>
 
   
     <meta property="og:type" content="website">
 <meta property="og:title" content="半岛的小屋">
-<meta property="og:url" content="https://www.bandao.ltd/tags/%E5%B0%81%E8%A3%85%E6%80%A7/index.html">
+<meta property="og:url" content="https://www.bandao.ltd/page/4/index.html">
 <meta property="og:site_name" content="半岛的小屋">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:author" content="半岛的孤城">
@@ -68,24 +68,17 @@
 
 <header class="header mobile-only"><div class="logo-wrap"><a class="avatar" href="/"><div class="bg" style="opacity:0;background-image:url(https://gcore.jsdelivr.net/gh/cdn-x/placeholder@1.0.12/avatar/round/rainbow64@3x.webp);"></div><img no-lazy class="avatar" src="https://wsrv.nl/?url=github.com/bandaoworld.png" onerror="javascript:this.classList.add('error');this.src='https://gcore.jsdelivr.net/gh/cdn-x/placeholder@1.0.12/image/2659360.svg';"></a><a class="title" href="/"><div class="main" ff="title">半岛的小屋</div><div class="sub normal cap">交流学习分享</div><div class="sub hover cap" style="opacity:0">不知道写啥，那就不写了。哎嘿</div></a></div></header>
 
- 
 
 
 
-
-<div class="navbar top"><nav class="post"><a href="/">近期发布</a><a href="/categories">分类</a><a class="active" href="/tags">标签：封装性</a><a href="/archives">归档</a></nav></div>
-<div class="post-list post"><a class="post-card post" href="/coding/java/note/11.html">
-<article class="md-text"><h2 class="post-title">java学习笔记11</h2><div class="excerpt"><p>
-    
-    
-    
-    
-    
-
-封装性面向对象的特征一：封装与隐藏一.问题的引入：
-当创建一个类的对象后，我们可以通过”对象.属性”的方式，对对象的属性赋值。这里，赋值操作要受到属性的数据类型和存储范围的制约。
-除此之外，没有其...</p></div><div class="meta cap"><span class="cap" id="post-meta"><svg style="margin-bottom:2px" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="currentColor" d="M6.94 2c.416 0 .753.324.753.724v1.46c.668-.012 1.417-.012 2.26-.012h4.015c.842 0 1.591 0 2.259.013v-1.46c0-.4.337-.725.753-.725s.753.324.753.724V4.25c1.445.111 2.394.384 3.09 1.055c.698.67.982 1.582 1.097 2.972L22 9H2v-.724c.116-1.39.4-2.302 1.097-2.972c.697-.67 1.645-.944 3.09-1.055V2.724c0-.4.337-.724.753-.724"/><path fill="currentColor" d="M22 14v-2c0-.839-.004-2.335-.017-3H2.01c-.013.665-.01 2.161-.01 3v2c0 3.771 0 5.657 1.172 6.828C4.343 22 6.228 22 10 22h4c3.77 0 5.656 0 6.828-1.172C22 19.658 22 17.772 22 14" opacity=".5"/><path fill="currentColor" d="M18 17a1 1 0 1 1-2 0a1 1 0 0 1 2 0m0-4a1 1 0 1 1-2 0a1 1 0 0 1 2 0m-5 4a1 1 0 1 1-2 0a1 1 0 0 1 2 0m0-4a1 1 0 1 1-2 0a1 1 0 0 1 2 0m-5 4a1 1 0 1 1-2 0a1 1 0 0 1 2 0m0-4a1 1 0 1 1-2 0a1 1 0 0 1 2 0"/></svg><time datetime="2021-12-19T06:16:00.000Z">2021-12-19</time></span><span class="cap breadcrumb"><svg style="margin-bottom:1px" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="currentColor" d="M2 6.95c0-.883 0-1.324.07-1.692A4 4 0 0 1 5.257 2.07C5.626 2 6.068 2 6.95 2c.386 0 .58 0 .766.017a4 4 0 0 1 2.18.904c.144.119.28.255.554.529L11 4c.816.816 1.224 1.224 1.712 1.495a4 4 0 0 0 .848.352C14.098 6 14.675 6 15.828 6h.374c2.632 0 3.949 0 4.804.77c.079.07.154.145.224.224c.77.855.77 2.172.77 4.804V14c0 3.771 0 5.657-1.172 6.828C19.657 22 17.771 22 14 22h-4c-3.771 0-5.657 0-6.828-1.172C2 19.657 2 17.771 2 14z" opacity=".5"/><path fill="currentColor" d="M20 6.238c0-.298-.005-.475-.025-.63a3 3 0 0 0-2.583-2.582C17.197 3 16.965 3 16.5 3H9.988c.116.104.247.234.462.45L11 4c.816.816 1.224 1.224 1.712 1.495a4 4 0 0 0 .849.352C14.098 6 14.675 6 15.829 6h.373c1.78 0 2.957 0 3.798.238"/><path fill="currentColor" fill-rule="evenodd" d="M12.25 10a.75.75 0 0 1 .75-.75h5a.75.75 0 0 1 0 1.5h-5a.75.75 0 0 1-.75-.75" clip-rule="evenodd"/></svg><span>Java学习笔记</span></span></div></article>
+<div class="navbar top"><nav class="post"><a class="active" href="/">近期发布</a><a href="/categories">分类</a><a href="/tags">标签</a><a href="/archives">归档</a></nav></div>
+<div class="post-list post"><a class="post-card post" href="/life/jjgl_nb.html">
+<article class="md-text"><h2 class="post-title">【西邮】经济管理无与伦比</h2><div class="excerpt"><p>2020-2021年西安邮电大学经济与管理学院学生会</p></div><div class="meta cap"><span class="cap" id="post-meta"><svg style="margin-bottom:2px" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="currentColor" d="M6.94 2c.416 0 .753.324.753.724v1.46c.668-.012 1.417-.012 2.26-.012h4.015c.842 0 1.591 0 2.259.013v-1.46c0-.4.337-.725.753-.725s.753.324.753.724V4.25c1.445.111 2.394.384 3.09 1.055c.698.67.982 1.582 1.097 2.972L22 9H2v-.724c.116-1.39.4-2.302 1.097-2.972c.697-.67 1.645-.944 3.09-1.055V2.724c0-.4.337-.724.753-.724"/><path fill="currentColor" d="M22 14v-2c0-.839-.004-2.335-.017-3H2.01c-.013.665-.01 2.161-.01 3v2c0 3.771 0 5.657 1.172 6.828C4.343 22 6.228 22 10 22h4c3.77 0 5.656 0 6.828-1.172C22 19.658 22 17.772 22 14" opacity=".5"/><path fill="currentColor" d="M18 17a1 1 0 1 1-2 0a1 1 0 0 1 2 0m0-4a1 1 0 1 1-2 0a1 1 0 0 1 2 0m-5 4a1 1 0 1 1-2 0a1 1 0 0 1 2 0m0-4a1 1 0 1 1-2 0a1 1 0 0 1 2 0m-5 4a1 1 0 1 1-2 0a1 1 0 0 1 2 0m0-4a1 1 0 1 1-2 0a1 1 0 0 1 2 0"/></svg><time datetime="2021-07-03T10:06:00.000Z">2021-07-03</time></span><span class="cap breadcrumb"><svg style="margin-bottom:1px" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="currentColor" d="M2 6.95c0-.883 0-1.324.07-1.692A4 4 0 0 1 5.257 2.07C5.626 2 6.068 2 6.95 2c.386 0 .58 0 .766.017a4 4 0 0 1 2.18.904c.144.119.28.255.554.529L11 4c.816.816 1.224 1.224 1.712 1.495a4 4 0 0 0 .848.352C14.098 6 14.675 6 15.828 6h.374c2.632 0 3.949 0 4.804.77c.079.07.154.145.224.224c.77.855.77 2.172.77 4.804V14c0 3.771 0 5.657-1.172 6.828C19.657 22 17.771 22 14 22h-4c-3.771 0-5.657 0-6.828-1.172C2 19.657 2 17.771 2 14z" opacity=".5"/><path fill="currentColor" d="M20 6.238c0-.298-.005-.475-.025-.63a3 3 0 0 0-2.583-2.582C17.197 3 16.965 3 16.5 3H9.988c.116.104.247.234.462.45L11 4c.816.816 1.224 1.224 1.712 1.495a4 4 0 0 0 .849.352C14.098 6 14.675 6 15.829 6h.373c1.78 0 2.957 0 3.798.238"/><path fill="currentColor" fill-rule="evenodd" d="M12.25 10a.75.75 0 0 1 .75-.75h5a.75.75 0 0 1 0 1.5h-5a.75.75 0 0 1-.75-.75" clip-rule="evenodd"/></svg><span>大学生活</span></span></div></article>
 </a></div>
+
+  <div class='paginator-wrap dis-select'>
+  <a class="extend prev" rel="prev" href="/page/3/"></a><a class="page-number" href="/">1</a><a class="page-number" href="/page/2/">2</a><a class="page-number" href="/page/3/">3</a><span class="page-number current">4</span><span class="extend next" rel="next"></span>
+  </div>
 
 
 <footer class="page-footer footnote"><hr><div class="sitemap"><div class="sitemap-group"><span class="fs15">探索</span><a href="/link"><i class="fa-solid fa-link"></i> 友链</a><a target="_blank" rel="noopener" href="https://www.travellings.cn/go-by-clouds.html"><i class="fa-solid fa-subway"></i> 开往</a></div><div class="sitemap-group"><span class="fs15">社交</span><a target="_blank" rel="noopener" href="https://github.com/bandaoworld"><i class="fa-brands fa-github"></i> bandaoworld</a><a target="_blank" rel="noopener" href="https://space.bilibili.com/32187583"><i class="fa-brands fa-bilibili"></i> 半岛的孤城</a></div><div class="sitemap-group"><span class="fs15">信息</span><a target="_blank" rel="noopener" href="https://github.com/xaoxuu/hexo-theme-stellar"><i class="fa-solid fa-palette"></i> Hexo主题: Stellar</a><a target="_blank" rel="noopener" href="https://beian.miit.gov.cn/"><i class="fa-solid fa-shield-halved"></i> 陕ICP备2021008033号</a></div></div><div class="text"></div></footer>
