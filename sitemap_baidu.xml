@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>https://www.bandao.ltd/guidance.html</loc>
+    <lastmod>2024-11-15</lastmod>
+  </url>
+  <url>
     <loc>https://www.bandao.ltd//CTF/Crypto/1.html</loc>
     <lastmod>2024-11-15</lastmod>
   </url>
@@ -65,10 +69,6 @@
     <lastmod>2024-11-06</lastmod>
   </url>
   <url>
-    <loc>https://www.bandao.ltd/guidance.html</loc>
-    <lastmod>2024-11-04</lastmod>
-  </url>
-  <url>
     <loc>https://www.bandao.ltd//coding/vue/2.html</loc>
     <lastmod>2024-11-04</lastmod>
   </url>
@@ -77,11 +77,11 @@
     <lastmod>2024-11-04</lastmod>
   </url>
   <url>
-    <loc>https://www.bandao.ltd//coding/vue/1.html</loc>
+    <loc>https://www.bandao.ltd//coding/java/project/2.html</loc>
     <lastmod>2024-11-04</lastmod>
   </url>
   <url>
-    <loc>https://www.bandao.ltd//coding/java/project/2.html</loc>
+    <loc>https://www.bandao.ltd//coding/vue/1.html</loc>
     <lastmod>2024-11-04</lastmod>
   </url>
   <url>
@@ -117,15 +117,15 @@
     <lastmod>2024-11-04</lastmod>
   </url>
   <url>
-    <loc>https://www.bandao.ltd//coding/python/dropin_wiki.html</loc>
-    <lastmod>2024-11-04</lastmod>
-  </url>
-  <url>
     <loc>https://www.bandao.ltd//coding/python/cloudmusic_encseckey.html</loc>
     <lastmod>2024-11-04</lastmod>
   </url>
   <url>
-    <loc>https://www.bandao.ltd//life/goodbye_02202016.html</loc>
+    <loc>https://www.bandao.ltd//coding/python/dropin_wiki.html</loc>
+    <lastmod>2024-11-04</lastmod>
+  </url>
+  <url>
+    <loc>https://www.bandao.ltd//life/xupt_2021tfb.html</loc>
     <lastmod>2024-11-04</lastmod>
   </url>
   <url>
@@ -133,7 +133,7 @@
     <lastmod>2024-11-04</lastmod>
   </url>
   <url>
-    <loc>https://www.bandao.ltd//life/xupt_2021tfb.html</loc>
+    <loc>https://www.bandao.ltd//life/goodbye_02202016.html</loc>
     <lastmod>2024-11-04</lastmod>
   </url>
   <url>
